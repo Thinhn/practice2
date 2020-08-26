@@ -1,0 +1,464 @@
+       /*font-family::"Montserrat", sans-serif*/
+        /*200;300;400;700*/
+        * {
+            font-family: "Montserrat", sans-serif;
+            box-sizing: border-box;
+        }
+
+        /*Navigation*/
+        div[id="navigation"] {
+            display: flex;
+            flex-direction: row;
+            /* border: 2px solid red; */
+            height: 150px;
+            /*rgba(255, 255, 255, 0.815);*/
+            background-color: #f2f8f3;
+            /*border-bottom: 3px solid rgba(0, 0, 0, 0.466);*/
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+        }
+
+        div nav {
+            order: 2;
+            /* border: 2px solid red; */
+            align-self: center;
+            flex-basis: 500px;
+            margin-bottom: 50px;
+        }
+
+        div nav li {
+            text-decoration: none;
+            list-style-type: none;
+            white-space: nowrap;
+            /* border: 2px solid blue; */
+            float: left;
+            margin-right: 20px;
+        }
+
+        div nav a {
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-weight: 300;
+            color: black;
+            text-decoration: none;
+        }
+
+        div nav ul li {
+            position: relative
+        }
+
+        .hideNav {
+            display: none;
+            position: absolute;
+        }
+
+        .hideNav li a {
+            color: #f2f8f3;
+        }
+
+        .hideNav li {
+            background-color: #bc849a;
+        }
+
+        div nav li:first-child:hover ul {
+            display: block;
+            bottom: -100;
+            left: -60%;
+        }
+
+        #secDiv {
+            order: 1;
+            flex-basis: 1000px;
+            /* border: 2px solid red; */
+            align-self: flex-end;
+            margin-bottom: 0px;
+
+        }
+
+        figure {
+            margin-left: 10%;
+            margin-bottom: 0px;
+            width: 200px;
+            /* border: 2px solid blue; */
+            height: 100px;
+        }
+
+        #secDiv figure img {
+            height: 60px;
+            width: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 0px;
+        }
+
+        figcaption {
+            margin-top: 0px;
+            /* border: 2px solid red; */
+        }
+
+        figcaption p {
+            margin-top: 5px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        #collapseBtn {
+            display: none;
+        }
+
+        .hideBelowNav {
+            display: none;
+        }
+
+        .navBelow {
+            background-color: #f2f8f3;
+        }
+
+        /*first section*/
+        #sect1 {
+            background-color: #ffadbb;
+            display: flex;
+            flex-direction: row;
+            height: 750px;
+            padding: 1px;
+            justify-content: space-evenly;
+            position: relative;
+
+        }
+
+        #sect1:before {
+            content: "";
+            width: 99%;
+            height: 0px;
+            /*align-self: flex-end;*/
+            border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+            box-shadow: 0px 2px 4px black;
+            position: absolute;
+        }
+
+        #sect1 h1:first-child {
+            margin-top: 0px;
+            font-weight: 700;
+            font-size: 7vw;
+            line-height: 80px;
+            margin-bottom: 0px;
+        }
+
+        #sect1 h1:first-child span {
+            color: #f2f8f3;
+        }
+
+        #sect1 #s1firstDiv {
+            /* border: 2px solid purple; */
+            height: 500px;
+            align-self: center;
+        }
+
+        #sect1 div h1+p {
+            font-weight: 400;
+            margin-top: 50px;
+            line-height: 25px;
+        }
+
+        #sect1 div p:last-child {
+            color: #f2f8f3;
+            background-color: black;
+            width: 130px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 40px;
+            height: 35px;
+            padding-top: 8px;
+            border-radius: 3px;
+            transition: transform 0.1s;
+        }
+
+        /*Target the a tag*/
+        #sect1 a:link {
+            text-decoration: none;
+            color: #f2f8f3;
+        }
+
+        #sect1 a:visited {
+            color: #f2f8f3;
+        }
+
+        #sect1 div .button:hover {
+            background-color: rgb(85, 219, 96);
+            transform: scaleY(0.9);
+            transform: scaleX(0.9);
+            border-radius: 3px;
+
+
+        }
+
+        #sect1 img {
+            width: 90%;
+            /* width: 50vw; */
+            align-self: center;
+            /* border: 2px solid red; */
+            /* margin-left: 70px; */
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+
+        }
+
+        #sect1 #sect1ImgDiv {
+            width: 800px;
+            height: 550px;
+            margin-left: 70px;
+            padding: 1px;
+            /* border: 2px solid purple; */
+            align-self: center;
+        }
+
+        /*second section*/
+        #sect2 {
+            padding: 1px;
+            /* border: 2px solid blue; */
+            height: 1090px;
+            background-color: #f2f8f3;
+        }
+
+        #sect2 h2 {
+            /* border: 2px solid red; */
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 600;
+            font-size: 4vw;
+            text-align: center;
+        }
+
+        #sect2Row2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #sect2Row2 h3 {
+            font-family: serif;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+
+        #sect2Row2 h4 {
+            margin-top: 10px;
+            font-weight: 300;
+            margin-bottom: 0px;
+        }
+
+        #sect2Row2 p {
+            margin-top: 35px;
+            font-weight: 400;
+        }
+
+        .sect2button {
+            text-align: center;
+            font-size: 20px;
+            width: 170px;
+            background-color: black;
+            height: 30px;
+            padding-top: 10px;
+            border-radius: 3px;
+            transition: transform 0.1s;
+        }
+
+        .sect2button a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .sect2SecA {
+            color: black;
+            letter-spacing: 2px;
+        }
+
+        .sect2button:hover {
+            border-radius: 3px;
+            background-color: rgb(85, 219, 96);
+            transform: scale(0.9, 0.9);
+        }
+
+        .sect2Block img {
+            width: 26vw;
+            /* width: 100%; */
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .sect2Block {
+            /* border: 2px solid green; */
+            height: 900px;
+            width: 350px;
+        }
+
+        #sect2MiddleBlock {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        /*footer*/
+        footer {
+            background-color: #bc849a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer h5 {
+            /* border: 2px solid red; */
+            text-align: center;
+            font-weight: 700;
+            font-size: 45px;
+        }
+
+        footer #footSecHead {
+            font-size: 30px;
+        }
+
+        footer h6 {
+            font-size: 15px;
+        }
+
+        footer form {
+            align-self: center;
+            border: 2px solid red;
+        }
+
+        footer label {
+            margin-right: 5px;
+            width: 2px;
+        }
+
+        .label {
+            margin-left: 5px;
+        }
+
+        #nameLabel {
+            margin-left: 40px;
+
+        }
+
+        /*Media Query*/
+        /*tablet landscape to phone*/
+        @media only screen and (max-width:991px) {
+
+
+            /*Change nav to image*/
+            /*Media query the btn*/
+            #collapseBtn {
+                display: block;
+            }
+
+            #btn {
+                height: 30px;
+                width: 30px;
+            }
+
+            #mainNav {
+                display: none;
+            }
+
+            #sect1 {
+                align-self: initial;
+                flex-direction: column;
+                /* height: 1200%; */
+                height: 130vw;
+            }
+
+            #sect1:before {
+                top: 0px;
+            }
+
+            #sect1 #s1firstDiv {
+                margin-top: 60px;
+                align-self: initial;
+                width: 70%;
+                margin-left: 50px;
+                height: 55vw;
+            }
+
+
+            #sect1 h1:first-child {
+                font-size: 11vw;
+                line-height: 100%;
+                margin-bottom: 5%;
+            }
+
+            #sect1 h1:first-child+p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            #sect1 #s1firstDiv .button {
+                margin-top: 3%;
+            }
+
+            #sect1 img {
+                margin-top: 20px;
+                display: block;
+                margin-bottom: 0px;
+                /* width: 85%; */
+                height: 50vw;
+
+            }
+
+            #sect1 #sect1ImgDiv {
+                margin-top: 30px;
+                padding-bottom: 0px;
+                width: 90%;
+                /* height: 59vw; */
+                height: 500px;
+                margin-bottom: 20px;
+
+            }
+
+            #sect2 {
+                height: 3500px;
+            }
+
+            #sect2Row2 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sect2Block {
+                width: 90%;
+                height: 1090px;
+            }
+
+            .sect2Block img {
+                width: 100%;
+            }
+
+            .otherDivsect2 {
+                margin-top: 20px;
+            }
+
+        }
+
+        @media only screen and (max-width:500px) {
+            #sect1 {
+                height: 700px;
+            }
+
+            #sect1ImgDiv img {
+                margin-top: 40px;
+            }
+
+            #sect2Row2 .otherDivsect2:last-child {
+                height: 900px;
+            }
+
+            #sect2 {
+                height: 3250px;
+            }
+        }
